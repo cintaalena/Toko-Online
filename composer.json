@@ -1,0 +1,12 @@
+{
+    "name": "lenovo/toko-online",
+    "description": "web untuk jual beli makanan",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Lenovo\\TokoOnline\\": "application/"
+        }
+    },
+    "require": {}
+}

@@ -1,0 +1,917 @@
+ ------ ------------------------------------------------------------------------------------------- 
+  Line   controllers\C_Admin.php                                                                    
+ ------ ------------------------------------------------------------------------------------------- 
+  4      Class C_Admin extends unknown class CI_Controller.                                         
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                       
+  9      C_Admin::__construct() calls parent::__construct() but C_Admin does not extend any class.  
+         🪪  class.noParent                                                                         
+  10     Access to an undefined property C_Admin::$session.                                         
+         🪪  property.notFound                                                                      
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property      
+  10     Cannot call method userdata() on mixed.                                                    
+         🪪  method.nonObject                                                                       
+  11     Function redirect not found.                                                               
+         🪪  function.notFound                                                                      
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                       
+  14     Access to an undefined property C_Admin::$load.                                            
+         🪪  property.notFound                                                                      
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property      
+  14     Cannot call method model() on mixed.                                                       
+         🪪  method.nonObject                                                                       
+  17     Method C_Admin::dashboard() has no return type specified.                                  
+         🪪  missingType.return                                                                     
+  19     Cannot access offset 'content_view' on mixed.                                              
+         🪪  offsetAccess.nonOffsetAccessible                                                       
+  20     Access to an undefined property C_Admin::$load.                                            
+         🪪  property.notFound                                                                      
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property      
+  20     Cannot call method view() on mixed.                                                        
+         🪪  method.nonObject                                                                       
+  24     Method C_Admin::kelola_pengguna() has no return type specified.                            
+         🪪  missingType.return                                                                     
+  26     Access to an undefined property C_Admin::$M_Admin.                                         
+         🪪  property.notFound                                                                      
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property      
+  26     Cannot access offset 'log_transaksi' on mixed.                                             
+         🪪  offsetAccess.nonOffsetAccessible                                                       
+  26     Cannot call method get_transaction_log() on mixed.                                         
+         🪪  method.nonObject                                                                       
+  28     Access to an undefined property C_Admin::$load.                                            
+         🪪  property.notFound                                                                      
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property      
+  28     Cannot call method view() on mixed.                                                        
+         🪪  method.nonObject                                                                       
+ ------ ------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------- 
+  Line   controllers\C_Auth.php                                                                   
+ ------ ----------------------------------------------------------------------------------------- 
+  4      Class C_Auth extends unknown class CI_Controller.                                        
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                     
+  9      C_Auth::__construct() calls parent::__construct() but C_Auth does not extend any class.  
+         🪪  class.noParent                                                                       
+  10     Access to an undefined property C_Auth::$load.                                           
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  10     Cannot call method model() on mixed.                                                     
+         🪪  method.nonObject                                                                     
+  11     Access to an undefined property C_Auth::$load.                                           
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  11     Cannot call method library() on mixed.                                                   
+         🪪  method.nonObject                                                                     
+  14     Method C_Auth::login() has no return type specified.                                     
+         🪪  missingType.return                                                                   
+  16     Access to an undefined property C_Auth::$session.                                        
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  16     Cannot call method userdata() on mixed.                                                  
+         🪪  method.nonObject                                                                     
+  17     Function redirect not found.                                                             
+         🪪  function.notFound                                                                    
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                     
+  20     Cannot access offset 'content_view' on mixed.                                            
+         🪪  offsetAccess.nonOffsetAccessible                                                     
+  21     Access to an undefined property C_Auth::$load.                                           
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  21     Cannot call method view() on mixed.                                                      
+         🪪  method.nonObject                                                                     
+  24     Method C_Auth::proses_login() has no return type specified.                              
+         🪪  missingType.return                                                                   
+  26     Access to an undefined property C_Auth::$form_validation.                                
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  26     Cannot call method set_rules() on mixed.                                                 
+         🪪  method.nonObject                                                                     
+  27     Access to an undefined property C_Auth::$form_validation.                                
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  27     Cannot call method set_rules() on mixed.                                                 
+         🪪  method.nonObject                                                                     
+  29     Access to an undefined property C_Auth::$form_validation.                                
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  29     Cannot call method run() on mixed.                                                       
+         🪪  method.nonObject                                                                     
+  32     Access to an undefined property C_Auth::$input.                                          
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  32     Cannot call method post() on mixed.                                                      
+         🪪  method.nonObject                                                                     
+  33     Access to an undefined property C_Auth::$input.                                          
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  33     Cannot call method post() on mixed.                                                      
+         🪪  method.nonObject                                                                     
+  35     Access to an undefined property C_Auth::$M_User.                                         
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  35     Cannot call method cek_login() on mixed.                                                 
+         🪪  method.nonObject                                                                     
+  37     Cannot access property $password on mixed.                                               
+         🪪  property.nonObject                                                                   
+  37     Parameter #1 $password of function password_verify expects string, mixed given.          
+         🪪  argument.type                                                                        
+  37     Parameter #2 $hash of function password_verify expects string, mixed given.              
+         🪪  argument.type                                                                        
+  40     Cannot access property $id on mixed.                                                     
+         🪪  property.nonObject                                                                   
+  41     Cannot access property $username on mixed.                                               
+         🪪  property.nonObject                                                                   
+  42     Cannot access property $role on mixed.                                                   
+         🪪  property.nonObject                                                                   
+  45     Access to an undefined property C_Auth::$session.                                        
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  45     Cannot call method set_userdata() on mixed.                                              
+         🪪  method.nonObject                                                                     
+  47     Cannot access property $role on mixed.                                                   
+         🪪  property.nonObject                                                                   
+  48     Function redirect not found.                                                             
+         🪪  function.notFound                                                                    
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                     
+  50     Function redirect not found.                                                             
+         🪪  function.notFound                                                                    
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                     
+  54     Access to an undefined property C_Auth::$session.                                        
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  54     Cannot call method set_flashdata() on mixed.                                             
+         🪪  method.nonObject                                                                     
+  55     Function redirect not found.                                                             
+         🪪  function.notFound                                                                    
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                     
+  59     Method C_Auth::register() has no return type specified.                                  
+         🪪  missingType.return                                                                   
+  61     Cannot access offset 'content_view' on mixed.                                            
+         🪪  offsetAccess.nonOffsetAccessible                                                     
+  62     Access to an undefined property C_Auth::$load.                                           
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  62     Cannot call method view() on mixed.                                                      
+         🪪  method.nonObject                                                                     
+  66     Method C_Auth::proses_register() has no return type specified.                           
+         🪪  missingType.return                                                                   
+  69     Access to an undefined property C_Auth::$form_validation.                                
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  69     Cannot call method set_rules() on mixed.                                                 
+         🪪  method.nonObject                                                                     
+  70     Access to an undefined property C_Auth::$form_validation.                                
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  70     Cannot call method set_rules() on mixed.                                                 
+         🪪  method.nonObject                                                                     
+  71     Access to an undefined property C_Auth::$form_validation.                                
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  71     Cannot call method set_rules() on mixed.                                                 
+         🪪  method.nonObject                                                                     
+  73     Access to an undefined property C_Auth::$form_validation.                                
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  73     Cannot call method run() on mixed.                                                       
+         🪪  method.nonObject                                                                     
+  79     Access to an undefined property C_Auth::$input.                                          
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  79     Cannot call method post() on mixed.                                                      
+         🪪  method.nonObject                                                                     
+  80     Access to an undefined property C_Auth::$input.                                          
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  80     Cannot call method post() on mixed.                                                      
+         🪪  method.nonObject                                                                     
+  80     Parameter #1 $password of function password_hash expects string, mixed given.            
+         🪪  argument.type                                                                        
+  85     Access to an undefined property C_Auth::$M_User.                                         
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  85     Cannot call method tambah_user() on mixed.                                               
+         🪪  method.nonObject                                                                     
+  88     Access to an undefined property C_Auth::$session.                                        
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  88     Cannot call method set_flashdata() on mixed.                                             
+         🪪  method.nonObject                                                                     
+  89     Function redirect not found.                                                             
+         🪪  function.notFound                                                                    
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                     
+  93     Method C_Auth::logout() has no return type specified.                                    
+         🪪  missingType.return                                                                   
+  95     Access to an undefined property C_Auth::$session.                                        
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  95     Cannot call method sess_destroy() on mixed.                                              
+         🪪  method.nonObject                                                                     
+  96     Function redirect not found.                                                             
+         🪪  function.notFound                                                                    
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                     
+ ------ ----------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------- 
+  Line   controllers\C_Barang.php                                                                     
+ ------ --------------------------------------------------------------------------------------------- 
+  4      Class C_Barang extends unknown class CI_Controller.                                          
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                         
+  10     C_Barang::__construct() calls parent::__construct() but C_Barang does not extend any class.  
+         🪪  class.noParent                                                                           
+  11     Access to an undefined property C_Barang::$load.                                             
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  11     Cannot call method model() on mixed.                                                         
+         🪪  method.nonObject                                                                         
+  12     Access to an undefined property C_Barang::$load.                                             
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  12     Cannot call method helper() on mixed.                                                        
+         🪪  method.nonObject                                                                         
+  15     Access to an undefined property C_Barang::$session.                                          
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  15     Cannot call method userdata() on mixed.                                                      
+         🪪  method.nonObject                                                                         
+  16     Function redirect not found.                                                                 
+         🪪  function.notFound                                                                        
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                         
+  21     Method C_Barang::display() has no return type specified.                                     
+         🪪  missingType.return                                                                       
+  23     Cannot access offset 'content_view' on mixed.                                                
+         🪪  offsetAccess.nonOffsetAccessible                                                         
+  24     Access to an undefined property C_Barang::$M_Barang.                                         
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  24     Cannot call method ambil() on mixed.                                                         
+         🪪  method.nonObject                                                                         
+  25     Access to an undefined property C_Barang::$load.                                             
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  25     Cannot call method view() on mixed.                                                          
+         🪪  method.nonObject                                                                         
+  29     Method C_Barang::formInputData() has no return type specified.                               
+         🪪  missingType.return                                                                       
+  32     Access to an undefined property C_Barang::$session.                                          
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  32     Cannot call method userdata() on mixed.                                                      
+         🪪  method.nonObject                                                                         
+  33     Function show_error not found.                                                               
+         🪪  function.notFound                                                                        
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                         
+  37     Cannot access offset 'content_view' on mixed.                                                
+         🪪  offsetAccess.nonOffsetAccessible                                                         
+  38     Access to an undefined property C_Barang::$load.                                             
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  38     Cannot call method view() on mixed.                                                          
+         🪪  method.nonObject                                                                         
+  41     Method C_Barang::inputData() has no return type specified.                                   
+         🪪  missingType.return                                                                       
+  44     Cannot access offset 'upload_path' on mixed.                                                 
+         🪪  offsetAccess.nonOffsetAccessible                                                         
+  49     Access to an undefined property C_Barang::$load.                                             
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  49     Cannot call method library() on mixed.                                                       
+         🪪  method.nonObject                                                                         
+  52     Access to an undefined property C_Barang::$upload.                                           
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  52     Cannot call method do_upload() on mixed.                                                     
+         🪪  method.nonObject                                                                         
+  54     Access to an undefined property C_Barang::$upload.                                           
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  54     Cannot call method data() on mixed.                                                          
+         🪪  method.nonObject                                                                         
+  55     Cannot access offset 'file_name' on mixed.                                                   
+         🪪  offsetAccess.nonOffsetAccessible                                                         
+  59     Access to an undefined property C_Barang::$input.                                            
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  59     Cannot call method post() on mixed.                                                          
+         🪪  method.nonObject                                                                         
+  60     Access to an undefined property C_Barang::$input.                                            
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  60     Cannot call method post() on mixed.                                                          
+         🪪  method.nonObject                                                                         
+  61     Access to an undefined property C_Barang::$input.                                            
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  61     Cannot call method post() on mixed.                                                          
+         🪪  method.nonObject                                                                         
+  66     Access to an undefined property C_Barang::$M_Barang.                                         
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  66     Cannot call method input() on mixed.                                                         
+         🪪  method.nonObject                                                                         
+  69     Access to an undefined property C_Barang::$session.                                          
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  69     Cannot call method set_flashdata() on mixed.                                                 
+         🪪  method.nonObject                                                                         
+  70     Function redirect not found.                                                                 
+         🪪  function.notFound                                                                        
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                         
+  74     Access to an undefined property C_Barang::$session.                                          
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  74     Access to an undefined property C_Barang::$upload.                                           
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  74     Cannot call method display_errors() on mixed.                                                
+         🪪  method.nonObject                                                                         
+  74     Cannot call method set_flashdata() on mixed.                                                 
+         🪪  method.nonObject                                                                         
+  75     Function redirect not found.                                                                 
+         🪪  function.notFound                                                                        
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                         
+  79     Method C_Barang::hapusBarang() has no return type specified.                                 
+         🪪  missingType.return                                                                       
+  79     Method C_Barang::hapusBarang() has parameter $id with no type specified.                     
+         🪪  missingType.parameter                                                                    
+  82     Access to an undefined property C_Barang::$M_Barang.                                         
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  82     Cannot call method hapusDataBarang() on mixed.                                               
+         🪪  method.nonObject                                                                         
+  85     Access to an undefined property C_Barang::$session.                                          
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  85     Cannot call method set_flashdata() on mixed.                                                 
+         🪪  method.nonObject                                                                         
+  88     Function redirect not found.                                                                 
+         🪪  function.notFound                                                                        
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                         
+  94     Method C_Barang::formUpdateStok() has no return type specified.                              
+         🪪  missingType.return                                                                       
+  94     Method C_Barang::formUpdateStok() has parameter $id with no type specified.                  
+         🪪  missingType.parameter                                                                    
+  97     Access to an undefined property C_Barang::$M_Barang.                                         
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  97     Cannot access offset 'barang' on mixed.                                                      
+         🪪  offsetAccess.nonOffsetAccessible                                                         
+  97     Cannot access offset 0 on mixed.                                                             
+         🪪  offsetAccess.nonOffsetAccessible                                                         
+  97     Cannot call method cariBarang() on mixed.                                                    
+         🪪  method.nonObject                                                                         
+  101    Access to an undefined property C_Barang::$load.                                             
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  101    Cannot call method view() on mixed.                                                          
+         🪪  method.nonObject                                                                         
+  105    Method C_Barang::prosesUpdateStok() has no return type specified.                            
+         🪪  missingType.return                                                                       
+  108    Access to an undefined property C_Barang::$input.                                            
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  108    Cannot call method post() on mixed.                                                          
+         🪪  method.nonObject                                                                         
+  109    Access to an undefined property C_Barang::$input.                                            
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  109    Cannot call method post() on mixed.                                                          
+         🪪  method.nonObject                                                                         
+  110    Access to an undefined property C_Barang::$input.                                            
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  110    Cannot call method post() on mixed.                                                          
+         🪪  method.nonObject                                                                         
+  113    Binary operation "+" between mixed and mixed results in an error.                            
+         🪪  binaryOp.invalid                                                                         
+  116    Access to an undefined property C_Barang::$M_Barang.                                         
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  116    Cannot call method update() on mixed.                                                        
+         🪪  method.nonObject                                                                         
+  119    Access to an undefined property C_Barang::$session.                                          
+         🪪  property.notFound                                                                        
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property        
+  119    Cannot call method set_flashdata() on mixed.                                                 
+         🪪  method.nonObject                                                                         
+  120    Function redirect not found.                                                                 
+         🪪  function.notFound                                                                        
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                         
+ ------ --------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------- 
+  Line   controllers\C_Cart.php                                                                   
+ ------ ----------------------------------------------------------------------------------------- 
+  4      Class C_Cart extends unknown class CI_Controller.                                        
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                     
+  10     C_Cart::__construct() calls parent::__construct() but C_Cart does not extend any class.  
+         🪪  class.noParent                                                                       
+  11     Access to an undefined property C_Cart::$load.                                           
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  11     Cannot call method model() on mixed.                                                     
+         🪪  method.nonObject                                                                     
+  12     Access to an undefined property C_Cart::$load.                                           
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  12     Cannot call method helper() on mixed.                                                    
+         🪪  method.nonObject                                                                     
+  17     Method C_Cart::masukCart() has no return type specified.                                 
+         🪪  missingType.return                                                                   
+  20     Access to an undefined property C_Cart::$input.                                          
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  20     Cannot call method post() on mixed.                                                      
+         🪪  method.nonObject                                                                     
+  21     Access to an undefined property C_Cart::$input.                                          
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  21     Cannot call method post() on mixed.                                                      
+         🪪  method.nonObject                                                                     
+  24     Access to an undefined property C_Cart::$M_Barang.                                       
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  24     Cannot access offset 0 on mixed.                                                         
+         🪪  offsetAccess.nonOffsetAccessible                                                     
+  24     Cannot call method cariBarang() on mixed.                                                
+         🪪  method.nonObject                                                                     
+  28     Access to an undefined property C_Cart::$cart.                                           
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  28     Argument of an invalid type mixed supplied for foreach, only iterables are supported.    
+         🪪  foreach.nonIterable                                                                  
+  28     Cannot call method contents() on mixed.                                                  
+         🪪  method.nonObject                                                                     
+  29     Cannot access offset 'id' on mixed.                                                      
+         🪪  offsetAccess.nonOffsetAccessible                                                     
+  32     Cannot access offset 'rowid' on mixed.                                                   
+         🪪  offsetAccess.nonOffsetAccessible                                                     
+  33     Binary operation "+" between mixed and mixed results in an error.                        
+         🪪  binaryOp.invalid                                                                     
+  33     Cannot access offset 'qty' on mixed.                                                     
+         🪪  offsetAccess.nonOffsetAccessible                                                     
+  35     Access to an undefined property C_Cart::$cart.                                           
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  35     Cannot call method update() on mixed.                                                    
+         🪪  method.nonObject                                                                     
+  44     Cannot access property $ID on mixed.                                                     
+         🪪  property.nonObject                                                                   
+  46     Cannot access property $HARGA on mixed.                                                  
+         🪪  property.nonObject                                                                   
+  47     Cannot access property $NAMA on mixed.                                                   
+         🪪  property.nonObject                                                                   
+  48     Cannot access property $FOTO on mixed.                                                   
+         🪪  property.nonObject                                                                   
+  50     Access to an undefined property C_Cart::$cart.                                           
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  50     Cannot call method insert() on mixed.                                                    
+         🪪  method.nonObject                                                                     
+  54     Function redirect not found.                                                             
+         🪪  function.notFound                                                                    
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                     
+  58     Method C_Cart::displayCart() has no return type specified.                               
+         🪪  missingType.return                                                                   
+  60     Cannot access offset 'content_view' on mixed.                                            
+         🪪  offsetAccess.nonOffsetAccessible                                                     
+  61     Access to an undefined property C_Cart::$load.                                           
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  61     Cannot call method view() on mixed.                                                      
+         🪪  method.nonObject                                                                     
+  65     Method C_Cart::deleteCart() has no return type specified.                                
+         🪪  missingType.return                                                                   
+  68     Access to an undefined property C_Cart::$cart.                                           
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  68     Cannot call method destroy() on mixed.                                                   
+         🪪  method.nonObject                                                                     
+  69     Function redirect not found.                                                             
+         🪪  function.notFound                                                                    
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                     
+  73     Method C_Cart::checkOutCart() has no return type specified.                              
+         🪪  missingType.return                                                                   
+  76     Access to an undefined property C_Cart::$cart.                                           
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  76     Cannot access offset 'total_belanja' on mixed.                                           
+         🪪  offsetAccess.nonOffsetAccessible                                                     
+  76     Cannot call method total() on mixed.                                                     
+         🪪  method.nonObject                                                                     
+  80     Access to an undefined property C_Cart::$load.                                           
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  80     Cannot call method view() on mixed.                                                      
+         🪪  method.nonObject                                                                     
+  83     Method C_Cart::hapusItem() has no return type specified.                                 
+         🪪  missingType.return                                                                   
+  83     Method C_Cart::hapusItem() has parameter $rowid with no type specified.                  
+         🪪  missingType.parameter                                                                
+  85     Access to an undefined property C_Cart::$cart.                                           
+         🪪  property.notFound                                                                    
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property    
+  85     Cannot call method remove() on mixed.                                                    
+         🪪  method.nonObject                                                                     
+  86     Function redirect not found.                                                             
+         🪪  function.notFound                                                                    
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                     
+ ------ ----------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------------- 
+  Line   controllers\C_Transaksi.php                                                                        
+ ------ --------------------------------------------------------------------------------------------------- 
+  4      Class C_Transaksi extends unknown class CI_Controller.                                             
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                               
+  10     C_Transaksi::__construct() calls parent::__construct() but C_Transaksi does not extend any class.  
+         🪪  class.noParent                                                                                 
+  11     Access to an undefined property C_Transaksi::$load.                                                
+         🪪  property.notFound                                                                              
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property              
+  11     Cannot call method model() on mixed.                                                               
+         🪪  method.nonObject                                                                               
+  12     Access to an undefined property C_Transaksi::$load.                                                
+         🪪  property.notFound                                                                              
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property              
+  12     Cannot call method model() on mixed.                                                               
+         🪪  method.nonObject                                                                               
+  13     Access to an undefined property C_Transaksi::$load.                                                
+         🪪  property.notFound                                                                              
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property              
+  13     Cannot call method model() on mixed.                                                               
+         🪪  method.nonObject                                                                               
+  14     Access to an undefined property C_Transaksi::$load.                                                
+         🪪  property.notFound                                                                              
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property              
+  14     Cannot call method helper() on mixed.                                                              
+         🪪  method.nonObject                                                                               
+  18     Method C_Transaksi::transaksiPenjualan() has no return type specified.                             
+         🪪  missingType.return                                                                             
+  22     Access to an undefined property C_Transaksi::$session.                                             
+         🪪  property.notFound                                                                              
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property              
+  22     Cannot call method userdata() on mixed.                                                            
+         🪪  method.nonObject                                                                               
+  23     Access to an undefined property C_Transaksi::$input.                                               
+         🪪  property.notFound                                                                              
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property              
+  23     Cannot call method post() on mixed.                                                                
+         🪪  method.nonObject                                                                               
+  24     Access to an undefined property C_Transaksi::$input.                                               
+         🪪  property.notFound                                                                              
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property              
+  24     Cannot call method post() on mixed.                                                                
+         🪪  method.nonObject                                                                               
+  25     Access to an undefined property C_Transaksi::$input.                                               
+         🪪  property.notFound                                                                              
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property              
+  25     Cannot call method post() on mixed.                                                                
+         🪪  method.nonObject                                                                               
+  26     Access to an undefined property C_Transaksi::$input.                                               
+         🪪  property.notFound                                                                              
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property              
+  26     Cannot call method post() on mixed.                                                                
+         🪪  method.nonObject                                                                               
+  31     Access to an undefined property C_Transaksi::$db.                                                  
+         🪪  property.notFound                                                                              
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property              
+  31     Cannot call method insert() on mixed.                                                              
+         🪪  method.nonObject                                                                               
+  34     Access to an undefined property C_Transaksi::$db.                                                  
+         🪪  property.notFound                                                                              
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property              
+  34     Cannot call method insert_id() on mixed.                                                           
+         🪪  method.nonObject                                                                               
+  41     Access to an undefined property C_Transaksi::$cart.                                                
+         🪪  property.notFound                                                                              
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property              
+  41     Cannot call method contents() on mixed.                                                            
+         🪪  method.nonObject                                                                               
+  45     Access to an undefined property C_Transaksi::$cart.                                                
+         🪪  property.notFound                                                                              
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property              
+  45     Argument of an invalid type mixed supplied for foreach, only iterables are supported.              
+         🪪  foreach.nonIterable                                                                            
+  45     Cannot call method contents() on mixed.                                                            
+         🪪  method.nonObject                                                                               
+  48     Cannot access offset 'id' on mixed.                                                                
+         🪪  offsetAccess.nonOffsetAccessible                                                               
+  49     Cannot access offset 'qty' on mixed.                                                               
+         🪪  offsetAccess.nonOffsetAccessible                                                               
+  50     Cannot access offset 'price' on mixed.                                                             
+         🪪  offsetAccess.nonOffsetAccessible                                                               
+  52     Access to an undefined property C_Transaksi::$db.                                                  
+         🪪  property.notFound                                                                              
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property              
+  52     Cannot call method insert() on mixed.                                                              
+         🪪  method.nonObject                                                                               
+  55     Access to an undefined property C_Transaksi::$M_Barang.                                            
+         🪪  property.notFound                                                                              
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property              
+  55     Cannot access offset 'id' on mixed.                                                                
+         🪪  offsetAccess.nonOffsetAccessible                                                               
+  55     Cannot access offset 0 on mixed.                                                                   
+         🪪  offsetAccess.nonOffsetAccessible                                                               
+  55     Cannot call method cariBarang() on mixed.                                                          
+         🪪  method.nonObject                                                                               
+  56     Binary operation "-" between mixed and mixed results in an error.                                  
+         🪪  binaryOp.invalid                                                                               
+  56     Cannot access offset 'qty' on mixed.                                                               
+         🪪  offsetAccess.nonOffsetAccessible                                                               
+  56     Cannot access property $STOK on mixed.                                                             
+         🪪  property.nonObject                                                                             
+  57     Access to an undefined property C_Transaksi::$M_Barang.                                            
+         🪪  property.notFound                                                                              
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property              
+  57     Cannot access offset 'id' on mixed.                                                                
+         🪪  offsetAccess.nonOffsetAccessible                                                               
+  57     Cannot call method update() on mixed.                                                              
+         🪪  method.nonObject                                                                               
+  61     Access to an undefined property C_Transaksi::$cart.                                                
+         🪪  property.notFound                                                                              
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property              
+  61     Cannot call method destroy() on mixed.                                                             
+         🪪  method.nonObject                                                                               
+  65     Access to an undefined property C_Transaksi::$load.                                                
+         🪪  property.notFound                                                                              
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property              
+  65     Cannot call method view() on mixed.                                                                
+         🪪  method.nonObject                                                                               
+  69     Method C_Transaksi::lastStrukDisplay() has no return type specified.                               
+         🪪  missingType.return                                                                             
+  72     Access to an undefined property C_Transaksi::$M_Transaksi.                                         
+         🪪  property.notFound                                                                              
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property              
+  72     Cannot call method ambilTransaksiTerakhir() on mixed.                                              
+         🪪  method.nonObject                                                                               
+  79     Access to an undefined property C_Transaksi::$M_Transaksi.                                         
+         🪪  property.notFound                                                                              
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property              
+  79     Cannot access property $ID on mixed.                                                               
+         🪪  property.nonObject                                                                             
+  79     Cannot call method ambilDetailJual() on mixed.                                                     
+         🪪  method.nonObject                                                                               
+  86     Access to an undefined property C_Transaksi::$load.                                                
+         🪪  property.notFound                                                                              
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property              
+  86     Cannot call method view() on mixed.                                                                
+         🪪  method.nonObject                                                                               
+ ------ --------------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------- 
+  Line   models\M_Admin.php                                                                     
+ ------ --------------------------------------------------------------------------------------- 
+  4      Class M_Admin extends unknown class CI_Model.                                          
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                   
+  6      Method M_Admin::get_transaction_log() has no return type specified.                    
+         🪪  missingType.return                                                                 
+  8      Access to an undefined property M_Admin::$db.                                          
+         🪪  property.notFound                                                                  
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property  
+  8      Cannot call method select() on mixed.                                                  
+         🪪  method.nonObject                                                                   
+  9      Access to an undefined property M_Admin::$db.                                          
+         🪪  property.notFound                                                                  
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property  
+  9      Cannot call method from() on mixed.                                                    
+         🪪  method.nonObject                                                                   
+  10     Access to an undefined property M_Admin::$db.                                          
+         🪪  property.notFound                                                                  
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property  
+  10     Cannot call method join() on mixed.                                                    
+         🪪  method.nonObject                                                                   
+  11     Access to an undefined property M_Admin::$db.                                          
+         🪪  property.notFound                                                                  
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property  
+  11     Cannot call method join() on mixed.                                                    
+         🪪  method.nonObject                                                                   
+  12     Access to an undefined property M_Admin::$db.                                          
+         🪪  property.notFound                                                                  
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property  
+  12     Cannot call method join() on mixed.                                                    
+         🪪  method.nonObject                                                                   
+  13     Access to an undefined property M_Admin::$db.                                          
+         🪪  property.notFound                                                                  
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property  
+  13     Cannot call method order_by() on mixed.                                                
+         🪪  method.nonObject                                                                   
+  14     Access to an undefined property M_Admin::$db.                                          
+         🪪  property.notFound                                                                  
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property  
+  14     Cannot call method get() on mixed.                                                     
+         🪪  method.nonObject                                                                   
+  14     Cannot call method result() on mixed.                                                  
+         🪪  method.nonObject                                                                   
+ ------ --------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------- 
+  Line   models\M_Barang.php                                                                    
+ ------ --------------------------------------------------------------------------------------- 
+  2      Class M_Barang extends unknown class CI_Model.                                         
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                   
+  5      Method M_Barang::ambil() has no return type specified.                                 
+         🪪  missingType.return                                                                 
+  8      Access to an undefined property M_Barang::$db.                                         
+         🪪  property.notFound                                                                  
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property  
+  8      Cannot call method where() on mixed.                                                   
+         🪪  method.nonObject                                                                   
+  9      Access to an undefined property M_Barang::$db.                                         
+         🪪  property.notFound                                                                  
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property  
+  9      Cannot call method get() on mixed.                                                     
+         🪪  method.nonObject                                                                   
+  10     Cannot call method result() on mixed.                                                  
+         🪪  method.nonObject                                                                   
+  14     Method M_Barang::input() has no return type specified.                                 
+         🪪  missingType.return                                                                 
+  14     Method M_Barang::input() has parameter $data with no type specified.                   
+         🪪  missingType.parameter                                                              
+  14     Method M_Barang::input() has parameter $table with no type specified.                  
+         🪪  missingType.parameter                                                              
+  16     Access to an undefined property M_Barang::$db.                                         
+         🪪  property.notFound                                                                  
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property  
+  16     Cannot call method insert() on mixed.                                                  
+         🪪  method.nonObject                                                                   
+  20     Method M_Barang::cariBarang() has no return type specified.                            
+         🪪  missingType.return                                                                 
+  20     Method M_Barang::cariBarang() has parameter $kode with no type specified.              
+         🪪  missingType.parameter                                                              
+  22     Access to an undefined property M_Barang::$db.                                         
+         🪪  property.notFound                                                                  
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property  
+  22     Cannot call method get_where() on mixed.                                               
+         🪪  method.nonObject                                                                   
+  22     Cannot call method result() on mixed.                                                  
+         🪪  method.nonObject                                                                   
+  26     Method M_Barang::update() has no return type specified.                                
+         🪪  missingType.return                                                                 
+  26     Method M_Barang::update() has parameter $id_barang with no type specified.             
+         🪪  missingType.parameter                                                              
+  26     Method M_Barang::update() has parameter $kapasitasBaru with no type specified.         
+         🪪  missingType.parameter                                                              
+  31     Access to an undefined property M_Barang::$db.                                         
+         🪪  property.notFound                                                                  
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property  
+  31     Cannot call method where() on mixed.                                                   
+         🪪  method.nonObject                                                                   
+  32     Access to an undefined property M_Barang::$db.                                         
+         🪪  property.notFound                                                                  
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property  
+  32     Cannot call method update() on mixed.                                                  
+         🪪  method.nonObject                                                                   
+  35     Method M_Barang::hapusDataBarang() has no return type specified.                       
+         🪪  missingType.return                                                                 
+  35     Method M_Barang::hapusDataBarang() has parameter $id with no type specified.           
+         🪪  missingType.parameter                                                              
+  40     Access to an undefined property M_Barang::$db.                                         
+         🪪  property.notFound                                                                  
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property  
+  40     Cannot call method where() on mixed.                                                   
+         🪪  method.nonObject                                                                   
+  41     Access to an undefined property M_Barang::$db.                                         
+         🪪  property.notFound                                                                  
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property  
+  41     Cannot call method update() on mixed.                                                  
+         🪪  method.nonObject                                                                   
+ ------ --------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------- 
+  Line   models\M_Jual.php                                                                      
+ ------ --------------------------------------------------------------------------------------- 
+  2      Class M_Jual extends unknown class CI_Model.                                           
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                   
+  5      Method M_Jual::input() has no return type specified.                                   
+         🪪  missingType.return                                                                 
+  5      Method M_Jual::input() has parameter $data with no type specified.                     
+         🪪  missingType.parameter                                                              
+  5      Method M_Jual::input() has parameter $table with no type specified.                    
+         🪪  missingType.parameter                                                              
+  7      Access to an undefined property M_Jual::$db.                                           
+         🪪  property.notFound                                                                  
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property  
+  7      Cannot call method insert() on mixed.                                                  
+         🪪  method.nonObject                                                                   
+  11     Method M_Jual::ambil() has no return type specified.                                   
+         🪪  missingType.return                                                                 
+  13     Access to an undefined property M_Jual::$db.                                           
+         🪪  property.notFound                                                                  
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property  
+  13     Cannot call method query() on mixed.                                                   
+         🪪  method.nonObject                                                                   
+  14     Cannot call method result() on mixed.                                                  
+         🪪  method.nonObject                                                                   
+ ------ --------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------- 
+  Line   models\M_Transaksi.php                                                                     
+ ------ ------------------------------------------------------------------------------------------- 
+  2      Class M_Transaksi extends unknown class CI_Model.                                          
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                       
+  5      Method M_Transaksi::input() has no return type specified.                                  
+         🪪  missingType.return                                                                     
+  5      Method M_Transaksi::input() has parameter $data with no type specified.                    
+         🪪  missingType.parameter                                                                  
+  5      Method M_Transaksi::input() has parameter $table with no type specified.                   
+         🪪  missingType.parameter                                                                  
+  7      Access to an undefined property M_Transaksi::$db.                                          
+         🪪  property.notFound                                                                      
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property      
+  7      Cannot call method insert() on mixed.                                                      
+         🪪  method.nonObject                                                                       
+  11     Method M_Transaksi::ambil() has no return type specified.                                  
+         🪪  missingType.return                                                                     
+  13     Access to an undefined property M_Transaksi::$db.                                          
+         🪪  property.notFound                                                                      
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property      
+  13     Cannot call method query() on mixed.                                                       
+         🪪  method.nonObject                                                                       
+  14     Cannot call method result() on mixed.                                                      
+         🪪  method.nonObject                                                                       
+  18     Method M_Transaksi::ambilTransaksiTerakhir() has no return type specified.                 
+         🪪  missingType.return                                                                     
+  20     Access to an undefined property M_Transaksi::$db.                                          
+         🪪  property.notFound                                                                      
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property      
+  20     Cannot call method order_by() on mixed.                                                    
+         🪪  method.nonObject                                                                       
+  21     Access to an undefined property M_Transaksi::$db.                                          
+         🪪  property.notFound                                                                      
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property      
+  21     Cannot call method limit() on mixed.                                                       
+         🪪  method.nonObject                                                                       
+  22     Access to an undefined property M_Transaksi::$db.                                          
+         🪪  property.notFound                                                                      
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property      
+  22     Cannot call method get() on mixed.                                                         
+         🪪  method.nonObject                                                                       
+  23     Cannot call method row() on mixed.                                                         
+         🪪  method.nonObject                                                                       
+  27     Method M_Transaksi::ambilDetailJual() has no return type specified.                        
+         🪪  missingType.return                                                                     
+  27     Method M_Transaksi::ambilDetailJual() has parameter $id_transaksi with no type specified.  
+         🪪  missingType.parameter                                                                  
+  29     Access to an undefined property M_Transaksi::$db.                                          
+         🪪  property.notFound                                                                      
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property      
+  29     Cannot call method select() on mixed.                                                      
+         🪪  method.nonObject                                                                       
+  30     Access to an undefined property M_Transaksi::$db.                                          
+         🪪  property.notFound                                                                      
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property      
+  30     Cannot call method from() on mixed.                                                        
+         🪪  method.nonObject                                                                       
+  31     Access to an undefined property M_Transaksi::$db.                                          
+         🪪  property.notFound                                                                      
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property      
+  31     Cannot call method join() on mixed.                                                        
+         🪪  method.nonObject                                                                       
+  32     Access to an undefined property M_Transaksi::$db.                                          
+         🪪  property.notFound                                                                      
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property      
+  32     Cannot call method where() on mixed.                                                       
+         🪪  method.nonObject                                                                       
+  33     Access to an undefined property M_Transaksi::$db.                                          
+         🪪  property.notFound                                                                      
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property      
+  33     Cannot call method get() on mixed.                                                         
+         🪪  method.nonObject                                                                       
+  34     Cannot call method result() on mixed.                                                      
+         🪪  method.nonObject                                                                       
+ ------ ------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------- 
+  Line   models\M_User.php                                                                      
+ ------ --------------------------------------------------------------------------------------- 
+  4      Class M_User extends unknown class CI_Model.                                           
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                   
+  6      Method M_User::cek_login() has no return type specified.                               
+         🪪  missingType.return                                                                 
+  6      Method M_User::cek_login() has parameter $username with no type specified.             
+         🪪  missingType.parameter                                                              
+  8      Access to an undefined property M_User::$db.                                           
+         🪪  property.notFound                                                                  
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property  
+  8      Cannot call method get_where() on mixed.                                               
+         🪪  method.nonObject                                                                   
+  8      Cannot call method row() on mixed.                                                     
+         🪪  method.nonObject                                                                   
+  10     Method M_User::tambah_user() has no return type specified.                             
+         🪪  missingType.return                                                                 
+  10     Method M_User::tambah_user() has parameter $data with no type specified.               
+         🪪  missingType.parameter                                                              
+  12     Access to an undefined property M_User::$db.                                           
+         🪪  property.notFound                                                                  
+         💡  Learn more: https://phpstan.org/blog/solving-phpstan-access-to-undefined-property  
+  12     Cannot call method insert() on mixed.                                                  
+         🪪  method.nonObject                                                                   
+ ------ --------------------------------------------------------------------------------------- 
+
+ -- --------------------------------------------------------------------------------------------------- 
+     Error                                                                                              
+ -- --------------------------------------------------------------------------------------------------- 
+     Ignored error pattern #Call to an undefined method CI_.*# was not matched in reported errors.      
+     Ignored error pattern #Access to an undefined property CI_.*# was not matched in reported errors.  
+ -- --------------------------------------------------------------------------------------------------- 
+
+ [ERROR] Found 365 errors                                                                                       
+
