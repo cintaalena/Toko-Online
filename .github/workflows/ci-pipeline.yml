@@ -21,13 +21,13 @@ jobs:
         with:
           php-version: '7.4'
           extensions: mbstring, xml, bcmath
-      
+
       - name: 'Langkah 3: Install Dependensi Composer'
         run: composer install --prefer-dist --no-progress
 
       - name: 'Langkah 4: Security Check (SCA)'
         run: composer audit
-      
+
       - name: 'Langkah 5: SonarCloud Scan'
         uses: SonarSource/sonarcloud-github-action@master
         env:
