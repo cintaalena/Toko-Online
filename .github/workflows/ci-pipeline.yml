@@ -16,7 +16,6 @@ jobs:
 
     # Langkah-langkah yang akan dijalankan
     steps:
-      # Langkah 1: Checkout Kode
       - name: Checkout repository
         uses: actions/checkout@v3
 
