@@ -36,8 +36,10 @@ jobs:
         run: composer audit
       
       # Langkah 5: Static Application Security Testing (SAST)
-      - name: SonarQube Scan
-        uses: sonarsource/sonarqube-scan-action@master
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+      -name: SonarCloud Scan
+    uses: SonarSource/sonarcloud-github-action@master
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Token bawaan untuk integrasi PR
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      SONAR_ORGANIZATION: ${{ secrets.SONAR_ORGANIZATION }}
+      SONAR_PROJECT_KEY: ${{ secrets.SONAR_PROJECT_KEY }}
