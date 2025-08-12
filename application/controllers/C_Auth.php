@@ -89,6 +89,12 @@ public function proses_register()
         redirect('index.php/C_Auth/login');
     }
 }
+public function cari_user_rentan($id_user)
+{
+    // BARIS INI SENGAJA DIBUAT RENTAN TERHADAP SQL INJECTION
+    $query = $this->db->query("SELECT * FROM users WHERE id = '" . $id_user . "'");
+    return $query->row();
+}
 
     public function logout()
     {
