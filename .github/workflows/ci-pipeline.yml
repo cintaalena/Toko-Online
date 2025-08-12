@@ -17,26 +17,27 @@ jobs:
     # Langkah-langkah yang akan dijalankan
     steps:
       # Langkah 1: Checkout Kode
-      # Mengunduh kode dari repositori ke dalam server virtual
       - name: Checkout repository
         uses: actions/checkout@v3
 
       # Langkah 2: Setup PHP
-      # Menginstal versi PHP yang sesuai untuk CodeIgniter 3
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '7.4' # Sesuaikan dengan versi PHP proyek Anda
-          extensions: mbstring, xml, bcmath # Tambahkan ekstensi PHP yang dibutuhkan
+          php-version: '7.4'
+          extensions: mbstring, xml, bcmath
           
       # Langkah 3: Install Dependensi Composer
-      # Menjalankan composer install untuk mengunduh library
       - name: Install Composer dependencies
         run: composer install --prefer-dist --no-progress
 
-      # (Lanjutan dari atas)
-
       # Langkah 4: Security Check (SCA)
-      # Memindai dependensi untuk mencari kerentanan
       - name: Scan for vulnerabilities in dependencies
         run: composer audit
+      
+      # Langkah 5: Static Application Security Testing (SAST)
+      - name: SonarQube Scan
+        uses: sonarsource/sonarqube-scan-action@master
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
