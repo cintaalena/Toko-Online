@@ -11,34 +11,27 @@ on:
 # Daftar pekerjaan (jobs) yang akan dieksekusi
 jobs:
   build-and-scan:
-    # Menggunakan server virtual Ubuntu terbaru dari GitHub
     runs-on: ubuntu-latest
-
-    # Langkah-langkah yang akan dijalankan
     steps:
-      - name: Checkout repository
+      - name: 'Langkah 1: Checkout Kode'
         uses: actions/checkout@v3
 
-      # Langkah 2: Setup PHP
-      - name: Setup PHP
+      - name: 'Langkah 2: Setup PHP'
         uses: shivammathur/setup-php@v2
         with:
           php-version: '7.4'
           extensions: mbstring, xml, bcmath
-          
-      # Langkah 3: Install Dependensi Composer
-      - name: Install Composer dependencies
+      
+      - name: 'Langkah 3: Install Dependensi Composer'
         run: composer install --prefer-dist --no-progress
 
-      # Langkah 4: Security Check (SCA)
-      - name: Scan for vulnerabilities in dependencies
+      - name: 'Langkah 4: Security Check (SCA)'
         run: composer audit
       
-      # Langkah 5: Static Application Security Testing (SAST)
-      -name: SonarCloud Scan
-    uses: SonarSource/sonarcloud-github-action@master
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Token bawaan untuk integrasi PR
-      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      SONAR_ORGANIZATION: ${{ secrets.SONAR_ORGANIZATION }}
-      SONAR_PROJECT_KEY: ${{ secrets.SONAR_PROJECT_KEY }}
+      - name: 'Langkah 5: SonarCloud Scan'
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_ORGANIZATION: ${{ secrets.SONAR_ORGANIZATION }}
+          SONAR_PROJECT_KEY: ${{ secrets.SONAR_PROJECT_KEY }}
