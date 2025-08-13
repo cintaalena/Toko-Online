@@ -1,27 +1,35 @@
-name: Build
+# Nama pipeline
+name: DevSecOps CI Pipeline
 
+# Pemicu: Inilah "aturan" yang Anda inginkan
 on:
+  # Berjalan saat ada push atau merge ke main
   push:
-    branches:
-      - main
+    branches: [ "main" ]
+  # Berjalan saat ada Pull Request dibuka atau diupdate untuk branch main
+  pull_request:
+    branches: [ "main" ]
 
-
+# Daftar pekerjaan yang akan dieksekusi
 jobs:
-  build:
-    name: Build and analyze
+  build-and-scan:
     runs-on: ubuntu-latest
-    
     steps:
-      - uses: actions/checkout@v4
+      - name: 'Checkout Kode'
+        uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
-      - uses: SonarSource/sonarqube-scan-action@v5
+          fetch-depth: 0
+
+      - name: 'Setup PHP'
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+      
+      - name: 'Install Dependensi Composer'
+        run: composer install --prefer-dist --no-progress
+
+      - name: 'SonarQube Scan (SAST)'
+        uses: sonarsource/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-      # If you wish to fail your job when the Quality Gate is red, uncomment the
-      # following lines. This would typically be used to fail a deployment.
-      # - uses: SonarSource/sonarqube-quality-gate-action@v1
-      #   timeout-minutes: 5
-      #   env:
-      #     SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
