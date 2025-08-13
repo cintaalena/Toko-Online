@@ -24,25 +24,25 @@ jobs:
         # Menggunakan Chocolatey, package manager untuk Windows
         run: choco install jq -y
 
-      - name: 'Langkah 7: Verifikasi Hasil Keamanan Secara Manual'
-        # Hanya berjalan jika pemicunya adalah Pull Request
+        - name: 'Langkah 7: Verifikasi Hasil Keamanan Secara Manual'
         if: github.event_name == 'pull_request'
-        # Menggunakan PowerShell untuk menjalankan perintah
         shell: pwsh
         run: |
-          # Tunggu 15 detik agar hasil analisis tersedia di API
           Start-Sleep -Seconds 15
 
-          # Ambil metrik analisis dari API SonarCloud menggunakan curl
-          # Ganti nilai 'component' dan 'pullRequest' dengan variabel yang sesuai
           $METRICS = curl.exe -s -u "${{ secrets.SONAR_TOKEN }}:" "https://sonarcloud.io/api/measures/component?component=${{ secrets.SONAR_PROJECT_KEY }}&metricKeys=new_vulnerabilities&pullRequest=${{ github.event.pull_request.number }}"
           
-          # Ekstrak jumlah kerentanan baru dari hasil JSON
-          $NEW_VULNS = ($METRICS | ConvertFrom-Json).component.measures | Where-Object { $_.metric -eq "new_vulnerabilities" } | Select-Object -ExpandProperty value
+          $NEW_VULNS_OBJECT = ($METRICS | ConvertFrom-Json).component.measures | Where-Object { $_.metric -eq "new_vulnerabilities" }
+          
+          # Periksa apakah objek kerentanan ditemukan. Jika tidak, nilainya adalah 0.
+          if ($null -eq $NEW_VULNS_OBJECT) {
+            $NEW_VULNS = 0
+          } else {
+            $NEW_VULNS = $NEW_VULNS_OBJECT | Select-Object -ExpandProperty value
+          }
           
           Write-Host "Ditemukan kerentanan baru: $NEW_VULNS"
           
-          # Periksa hasilnya. Jika lebih dari 0, gagalkan pipeline!
           if ([int]$NEW_VULNS -gt 0) {
             Write-Host "Pipeline GAGAL karena ditemukan kerentanan baru pada kode!"
             exit 1
