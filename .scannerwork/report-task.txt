@@ -1,6 +1,6 @@
-projectKey=Toko-Online
+projectKey=Toko-Online-2
 serverUrl=http://localhost:9000
 serverVersion=25.6.0.109173
-dashboardUrl=http://localhost:9000/dashboard?id=Toko-Online
-ceTaskId=24862855-9f66-4de8-802e-be4363840dd9
-ceTaskUrl=http://localhost:9000/api/ce/task?id=24862855-9f66-4de8-802e-be4363840dd9
+dashboardUrl=http://localhost:9000/dashboard?id=Toko-Online-2
+ceTaskId=b79e2ba1-e791-4bc5-b9be-980e60fbf0b6
+ceTaskUrl=http://localhost:9000/api/ce/task?id=b79e2ba1-e791-4bc5-b9be-980e60fbf0b6
