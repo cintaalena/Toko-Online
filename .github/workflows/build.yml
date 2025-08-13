@@ -17,13 +17,7 @@ jobs:
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v5
         env:
-          # Pastikan semua secret ini sudah diatur di GitHub
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_ORGANIZATION: ${{ secrets.SONAR_ORGANIZATION }}
-          SONAR_PROJECT_KEY: ${{ secrets.SONAR_PROJECT_KEY }}
-          SONAR_HOST_URL: https://sonarcloud.io # Langsung definisikan di sini
-
-      # --- MULAI BLOK BARU ---
 
       - name: 'Langkah 6: Install JQ (JSON Parser)'
         # Menggunakan Chocolatey, package manager untuk Windows
@@ -57,3 +51,4 @@ jobs:
           } else {
             Write-Host "Pipeline SUKSES, tidak ditemukan kerentanan baru."
           }
+

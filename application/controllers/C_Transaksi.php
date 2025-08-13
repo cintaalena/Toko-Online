@@ -18,12 +18,13 @@ class C_Transaksi extends CI_Controller {
    public function transaksiPenjualan()
 {
     // 1. Ambil data customer dari form checkout
-    $data_pembeli = array(
+   $data_pembeli = array(
         'user_id'   => $this->session->userdata('user_id'),
-        'NAMA'      => $this->input->post('nama'),
-        'ALAMAT'    => $this->input->post('alamat'),
-        'KECAMATAN' => $this->input->post('kecamatan'),
-        'KOTA'      => $this->input->post('kota'),
+        // PERBAIKAN: Tambahkan TRUE untuk mengaktifkan filter XSS
+        'NAMA'      => $this->input->post('nama', TRUE),
+        'ALAMAT'    => $this->input->post('alamat', TRUE),
+        'KECAMATAN' => $this->input->post('kecamatan', TRUE),
+        'KOTA'      => $this->input->post('kota', TRUE),
         'TANGGAL'   => date('Y-m-d H:i:s')
     );
 
