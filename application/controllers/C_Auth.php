@@ -70,13 +70,13 @@ public function proses_register()
     $this->form_validation->set_rules('password', 'Password', 'required|min_length[5]');
     $this->form_validation->set_rules('passconf', 'Konfirmasi Password', 'required|matches[password]');
 
-     if ($this->form_validation->run() == FALSE) {
+      if ($this->form_validation->run() == FALSE) {
             $this->register();
         } else {
             $data = array(
                 'username' => $this->input->post('username', TRUE),
-                // BARIS RENTAN - Menggunakan MD5 yang sangat tidak aman untuk password
-                'password' => md5($this->input->post('password')),
+                // PERBAIKAN: Gunakan algoritma hashing yang kuat dan modern
+                'password' => password_hash($this->input->post('password'), PASSWORD_BCRYPT),
                 'role'     => 'pembeli'
             );
 
