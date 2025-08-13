@@ -13,7 +13,47 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v5
         env:
+          # Pastikan semua secret ini sudah diatur di GitHub
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_ORGANIZATION: ${{ secrets.SONAR_ORGANIZATION }}
+          SONAR_PROJECT_KEY: ${{ secrets.SONAR_PROJECT_KEY }}
+          SONAR_HOST_URL: https://sonarcloud.io # Langsung definisikan di sini
+
+      # --- MULAI BLOK BARU ---
+
+      - name: 'Langkah 6: Install JQ (JSON Parser)'
+        # Menggunakan Chocolatey, package manager untuk Windows
+        run: choco install jq -y
+
+      - name: 'Langkah 7: Verifikasi Hasil Keamanan Secara Manual'
+        if: github.event_name == 'pull_request'
+        shell: pwsh
+        run: |
+          Start-Sleep -Seconds 15
+
+          $METRICS_JSON = curl.exe -s -u "${{ secrets.SONAR_TOKEN }}:" "https://sonarcloud.io/api/measures/component?component=${{ secrets.SONAR_PROJECT_KEY }}&metricKeys=new_vulnerabilities&pullRequest=${{ github.event.pull_request.number }}"
+          
+          # Ubah JSON menjadi objek PowerShell
+          $METRICS_OBJECT = $METRICS_JSON | ConvertFrom-Json
+          
+          # Cari metrik untuk 'new_vulnerabilities'
+          $VULN_METRIC = $METRICS_OBJECT.component.measures | Where-Object { $_.metric -eq "new_vulnerabilities" }
+          
+          $NEW_VULNS = 0
+          # Jika metriknya ADA, baru kita ambil nilainya
+          if ($null -ne $VULN_METRIC) {
+            $NEW_VULNS = $VULN_METRIC.value
+          }
+          
+          Write-Host "Ditemukan kerentanan baru: $NEW_VULNS"
+          
+          if ([int]$NEW_VULNS -gt 0) {
+            Write-Host "Pipeline GAGAL karena ditemukan kerentanan baru pada kode!"
+            exit 1
+          } else {
+            Write-Host "Pipeline SUKSES, tidak ditemukan kerentanan baru."
+          }
