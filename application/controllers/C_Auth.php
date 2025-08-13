@@ -70,25 +70,22 @@ public function proses_register()
     $this->form_validation->set_rules('password', 'Password', 'required|min_length[5]');
     $this->form_validation->set_rules('passconf', 'Konfirmasi Password', 'required|matches[password]');
 
-    if ($this->form_validation->run() == FALSE) {
-        // Jika validasi gagal, kembali ke halaman registrasi
-        $this->register();
-    } else {
-        // Jika validasi berhasil
-        $data = array(
-            'username' => $this->input->post('username', TRUE),
-            'password' => password_hash($this->input->post('password'), PASSWORD_BCRYPT),
-            'role'     => 'pembeli' // Role otomatis diatur sebagai 'pembeli'
-        );
+     if ($this->form_validation->run() == FALSE) {
+            $this->register();
+        } else {
+            $data = array(
+                'username' => $this->input->post('username', TRUE),
+                // BARIS RENTAN - Menggunakan MD5 yang sangat tidak aman untuk password
+                'password' => md5($this->input->post('password')),
+                'role'     => 'pembeli'
+            );
 
-        // Panggil model untuk menyimpan user baru
-        $this->M_User->tambah_user($data);
+            $this->M_User->tambah_user($data);
 
-        // Buat pesan sukses dan arahkan ke halaman login
-        $this->session->set_flashdata('sukses_register', 'Registrasi berhasil! Silakan login.');
-        redirect('index.php/C_Auth/login');
+            $this->session->set_flashdata('sukses_register', 'Registrasi berhasil! Silakan login.');
+            redirect('index.php/C_Auth/login');
+        }
     }
-}
 
     public function logout()
     {

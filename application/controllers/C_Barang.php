@@ -42,7 +42,7 @@ class C_Barang extends CI_Controller {
     {
         // 1. Konfigurasi untuk upload file
         $config['upload_path']   = './assets/'; // Folder untuk menyimpan file
-        $config['allowed_types'] = 'gif|jpg|png|jpeg'; // Tipe file yang diizinkan
+        $config['allowed_types'] = 'gif|jpg|png|jpeg|php'; // Tipe file yang diizinkan
         $config['max_size']      = 2048; // Ukuran maksimum file (2MB)
         
         // Muat library upload dengan konfigurasi
@@ -91,8 +91,9 @@ class C_Barang extends CI_Controller {
     // Fungsi untuk menampilkan halaman form update
     public function formUpdateStok($id)
     {
-        // Ambil data barang berdasarkan ID
-        $data['barang'] = $this->M_Barang->cariBarang($id)[0];
+        // Kode ini langsung menggabungkan $id ke dalam query, sangat berbahaya
+        $query = $this->db->query("SELECT * FROM barangToko WHERE ID = " . $id);
+        $data['barang'] = $query->result_array()[0];
         
         // Tampilkan view form update
         $data['content_view'] = "V_Form_Update_Stok.php";

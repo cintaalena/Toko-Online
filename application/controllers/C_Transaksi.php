@@ -18,8 +18,9 @@ class C_Transaksi extends CI_Controller {
    public function transaksiPenjualan()
 {
     // 1. Ambil data customer dari form checkout
-    $data_pembeli = array(
+   $data_pembeli = array(
         'user_id'   => $this->session->userdata('user_id'),
+        // BARIS RENTAN - Mematikan filter XSS bawaan CodeIgniter
         'NAMA'      => $this->input->post('nama'),
         'ALAMAT'    => $this->input->post('alamat'),
         'KECAMATAN' => $this->input->post('kecamatan'),
